@@ -12,7 +12,7 @@ You are not allowed to collaborate during the sprint challenge.
 
 ## Project Set Up
 
-- [ ] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
+- [ ] Fork and clone the repo. Delete your old fork from Github fi`rst if you are repeating this Unit.
 - [ ] Open the assignment in Canvas and click on the "Set up git" option (Or, depending, if you see something along the lines of 'Load Sprint Challenge Submission in a new window' click that).
 - [ ] Wire your fork to Codegrade using the "Click here for instructions on setting up Git submissions" link, select Github, authorize Github.
 - [ ] Push your first commit: `git commit --allow-empty -m "first commit" && git push`. MAKE SURE TO PUSH TO MAIN, YOU NO LONGER NEED TO CREATE A NEW BRANCH!!
@@ -82,3 +82,6 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 1. Describe component state.
 1. Describe props.
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+
+//Test First commit Lionel 
