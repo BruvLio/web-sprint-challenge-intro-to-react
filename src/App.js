@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
 
 const App = () => {
+
+  const [ characters, setCharacters] = useState(null)
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
