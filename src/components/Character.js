@@ -19,11 +19,7 @@ border: 2px solid white;
 
 
 
-const Character = (props) => {
-
-
-    const { name } = props
-
+const Character = ({name}) => {
     return(
         <CharacterDiv>
             <h1>

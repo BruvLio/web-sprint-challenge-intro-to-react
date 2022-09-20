@@ -24,23 +24,48 @@ const App = () => {
   // sync up with, if any.
 
 
-  useEffect(() =>{
-    axios.get("https://swapi.dev/api/people/")
-    .then((res)=>{
-      setCharacters(res.data)
-    }).catch(err => console.log(err))
+  useEffect(() => {
+    // axios.get("https://swapi.dev/api/people/")
+    // .then((res)=>{
+    //   setCharacters(res.data)
+    // }).catch(err => console.log(err))
+    const getApiTest = async () => {
+      try {
+        
+        
+        const res = await axios.get("https://swapi.dev/api/people/")
+        
+        // .then((res)=>{
+          setCharacters(res.data)
+        // }).catch(err => console.log(err))
+  
+  
+      } catch(err){
+        console.log(err)
+      }
+
+    }
+    getApiTest()
   },[])
+
+
+
+
+
+
+
 
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
       <ContainerDiv>
       {
-        characters.map((item, index)=>{
+        characters.map(({name,height}, index)=>{
           return (
             <Character
               key={index}
-              name={item.name} 
+              name={name} 
+              height={height}
             />
           )
         })
@@ -51,3 +76,7 @@ const App = () => {
 }
 
 export default App;
+
+// const lionelFunction = () =>{
+//   return `lionel is awesome`
+// }
