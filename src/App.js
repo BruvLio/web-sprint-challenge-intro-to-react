@@ -30,16 +30,11 @@ const App = () => {
     //   setCharacters(res.data)
     // }).catch(err => console.log(err))
     const getApiTest = async () => {
-      try {
-        
-        
+
+      try {   
+      
         const res = await axios.get("https://swapi.dev/api/people/")
-        
-        // .then((res)=>{
           setCharacters(res.data)
-        // }).catch(err => console.log(err))
-  
-  
       } catch(err){
         console.log(err)
       }
